@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Fake Profile Detector</title>
+    <style>
+body{
+    font-family: Arial;
+    margin:40px;
+}
+
+input{
+    margin:5px;
+    padding:5px;
+}
+
+button{
+    padding:10px;
+}
+</style>
+</head>
+<body>
+
+```
+<h1>AI Fake Profile Detection System</h1>
+<p>Machine Learning based Instagram Account Verification</p>
+
+<form action="/predict" method="post">
+
+    Profile Picture:
+    <input type="number" name="profile_pic"><br><br>
+
+    Username Number Ratio:
+    <input type="number" step="0.01" name="username_ratio"><br><br>
+
+    Fullname Words:
+    <input type="number" name="fullname_words"><br><br>
+
+    Fullname Number Ratio:
+    <input type="number" step="0.01" name="fullname_ratio"><br><br>
+
+    Name Equals Username:
+    <input type="number" name="name_equal"><br><br>
+
+    Description Length:
+    <input type="number" name="description"><br><br>
+
+    External URL:
+    <input type="number" name="external_url"><br><br>
+
+    Private:
+    <input type="number" name="private"><br><br>
+
+    Posts:
+    <input type="number" name="posts"><br><br>
+
+    Followers:
+    <input type="number" name="followers"><br><br>
+
+    Following:
+    <input type="number" name="following"><br><br>
+
+    <button type="submit">Check Profile</button>
+
+</form>
+
+<h2>{{ prediction }}</h2>
+```
+
+</body>
+</html>
